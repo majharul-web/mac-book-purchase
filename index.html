@@ -22,7 +22,8 @@
         </div>
 
         <!-- Macbook info -->
-        <div>
+        <div class="ml-3">
+          <!-- title and desc -->
           <div>
             <h1 class="text-4xl font-bold">Customize your blue 24-inch iMac With Apple M1 Chip</h1>
             <p class="mt-2">
@@ -31,8 +32,53 @@
               Mouse Magic Keyboard - US English
             </p>
           </div>
+          <!-- extra memory -->
+          <div class="mt-10">
+            <h3 class="text-xl font-bold mb-1">Memory</h3>
+            <button class="border-2 py-2 px-5 rounded hover:bg-blue-300">8GB unified memory</button>
+            <button class="border-2 py-2 px-5 rounded hover:bg-blue-300 ml-3">16GB unified memory</button>
+          </div>
+          <!-- extra storage -->
+          <div class="mt-5">
+            <h3 class="text-xl font-bold mb-1">Storage</h3>
+            <button class="border-2 py-2 px-3 rounded hover:bg-blue-300">256GB SSD storage</button>
+            <button class="border-2 py-2 px-3 rounded hover:bg-blue-300 ml-3">512GB SSD storage</button>
+            <button class="border-2 py-2 px-3 rounded hover:bg-blue-300 ml-3">1TB SSD storage</button>
+          </div>
+          <!-- delivery option -->
+          <div class="mt-5">
+            <h3 class="text-xl font-bold mb-1">Choose Your Delivery Option</h3>
+            <button class="border-2 py-2 px-9 rounded hover:bg-blue-300">Regular Shipping</button>
+            <button class="border-2 py-2 px-9 rounded hover:bg-blue-300 ml-3">Express Shipping</button>
+          </div>
+          <!-- price section -->
+          <div class="mt-5 grid grid-cols-2">
+            <div>
+              <h3 class="border-b-2 font-bold mt-2">Best Price</h3>
+              <h3 class="border-b-2 font-bold mt-2">Extra Memory Cost</h3>
+              <h3 class="border-b-2 font-bold mt-2">Extra storage Cost</h3>
+              <h3 class="border-b-2 border-yellow-900 font-bold mt-2">Delivery Cost</h3>
+              <h3 class="font-bold mt-2">total Cost</h3>
+            </div>
+            <div>
+              <h3 class="font-bold mt-2">$ <span>1299</span></h3>
+              <h3 class="font-bold mt-2">$ <span>0</span></h3>
+              <h3 class="font-bold mt-2">$ <span>0</span></h3>
+              <h3 class="font-bold mt-2">$ <span>0</span></h3>
+              <h3 class="font-bold mt-4">$ <span>1299</span></h3>
+            </div>
+          </div>
+          <!-- promo code -->
+          <div class="mt-3">
+            <h3 class="text-xl">Add Promo code</h3>
+            <input class="border-2 py-2 rounded" type="text" />
+            <button class="border py-2 px-4 bg-pink-600 rounded font-bold text-white">Apply</button>
+          </div>
         </div>
       </section>
+      <hr class="mt-5" />
+      <!-- final Total -->
+      <h2 class="text-4xl font-bold text-center">Total: $<span>1299</span></h2>
     </main>
     <!-- main js connect -->
     <script src="js/main.js"></script>
