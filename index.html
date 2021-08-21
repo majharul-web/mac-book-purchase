@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- main section -->
-    <main class="container px-24">
+    <main class="container px-16">
       <section class="grid grid-cols-2">
         <!-- image container -->
         <div>
@@ -35,50 +35,108 @@
           <!-- extra memory -->
           <div class="mt-10">
             <h3 class="text-xl font-bold mb-1">Memory</h3>
-            <button class="border-2 py-2 px-5 rounded hover:bg-blue-300">8GB unified memory</button>
-            <button class="border-2 py-2 px-5 rounded hover:bg-blue-300 ml-3">16GB unified memory</button>
+            <button
+              id="8gb-memory-button"
+              class="border-2 py-2 px-5 rounded hover:bg-blue-300 focus:ring-2 focus:ring-blue-600"
+            >
+              8GB unified memory
+            </button>
+            <button
+              id="16gb-memory-button"
+              class="border-2 py-2 px-5 rounded hover:bg-blue-300 ml-3 focus:ring-2 focus:ring-blue-600"
+            >
+              16GB unified memory
+            </button>
           </div>
           <!-- extra storage -->
           <div class="mt-5">
             <h3 class="text-xl font-bold mb-1">Storage</h3>
-            <button class="border-2 py-2 px-3 rounded hover:bg-blue-300">256GB SSD storage</button>
-            <button class="border-2 py-2 px-3 rounded hover:bg-blue-300 ml-3">512GB SSD storage</button>
-            <button class="border-2 py-2 px-3 rounded hover:bg-blue-300 ml-3">1TB SSD storage</button>
+            <button
+              id="256gb-storage-button"
+              class="border-2 py-2 px-3 rounded hover:bg-blue-300 focus:ring-2 focus:ring-blue-600"
+            >
+              256GB SSD storage
+            </button>
+            <button
+              id="512gb-storage-button"
+              class="border-2 py-2 px-3 rounded hover:bg-blue-300 ml-3 focus:ring-2 focus:ring-blue-600"
+            >
+              512GB SSD storage
+            </button>
+            <button
+              id="1tb-storage-button"
+              class="border-2 py-2 px-3 rounded hover:bg-blue-300 ml-3 focus:ring-2 focus:ring-blue-600"
+            >
+              1TB SSD storage
+            </button>
           </div>
           <!-- delivery option -->
           <div class="mt-5">
             <h3 class="text-xl font-bold mb-1">Choose Your Delivery Option</h3>
-            <button class="border-2 py-2 px-9 rounded hover:bg-blue-300">Regular Shipping</button>
-            <button class="border-2 py-2 px-9 rounded hover:bg-blue-300 ml-3">Express Shipping</button>
+            <button
+              id="free-delivery-button"
+              class="border-2 py-2 px-2 rounded hover:bg-blue-300 focus:ring-2 focus:ring-blue-600"
+            >
+              Friday,25 August Free Delivery
+            </button>
+            <button
+              id="express-delivery-buttotn"
+              class="border-2 py-2 px-2 rounded hover:bg-blue-300 ml-3 focus:ring-2 focus:ring-blue-600"
+            >
+              Sunday,21 August Delivery Charge $20
+            </button>
           </div>
           <!-- price section -->
-          <div class="mt-5 grid grid-cols-2">
-            <div>
-              <h3 class="border-b-2 font-bold mt-2">Best Price</h3>
-              <h3 class="border-b-2 font-bold mt-2">Extra Memory Cost</h3>
-              <h3 class="border-b-2 font-bold mt-2">Extra storage Cost</h3>
-              <h3 class="border-b-2 border-yellow-900 font-bold mt-2">Delivery Cost</h3>
-              <h3 class="font-bold mt-2">total Cost</h3>
-            </div>
-            <div>
-              <h3 class="font-bold mt-2">$ <span>1299</span></h3>
-              <h3 class="font-bold mt-2">$ <span>0</span></h3>
-              <h3 class="font-bold mt-2">$ <span>0</span></h3>
-              <h3 class="font-bold mt-2">$ <span>0</span></h3>
-              <h3 class="font-bold mt-4">$ <span>1299</span></h3>
-            </div>
+          <div class="mt-14">
+            <table>
+              <tr class="border-b-2 grid grid-cols-2 gap-36 mt-2">
+                <td class="font-bold">Best Price</td>
+                <td class="font-bold">$<span id="current-best-cost">1299</span></td>
+              </tr>
+              <tr class="border-b-2 grid grid-cols-2 gap-36 mt-2">
+                <td class="font-bold">Extra Memory Cost</td>
+                <td class="font-bold">$<span id="current-memory-cost">0</span></td>
+              </tr>
+              <tr class="border-b-2 grid grid-cols-2 gap-36 mt-2">
+                <td class="font-bold">Extra storage Cost</td>
+                <td class="font-bold">$<span id="current-storage-cost">0</span></td>
+              </tr>
+              <tr class="border-b-2 border-blue-400 grid grid-cols-2 gap-36 mt-2">
+                <td class="font-bold">Delivery Cost</td>
+                <td class="font-bold">$<span id="current-delivery-cost">0</span></td>
+              </tr>
+              <tr class="grid grid-cols-2 gap-36 mt-2">
+                <td class="font-bold">total Cost</td>
+                <td class="font-bold">$<span id="current-total-cost">1299</span></td>
+              </tr>
+            </table>
           </div>
           <!-- promo code -->
           <div class="mt-3">
             <h3 class="text-xl">Add Promo code</h3>
-            <input class="border-2 py-2 rounded" type="text" />
-            <button class="border py-2 px-4 bg-pink-600 rounded font-bold text-white">Apply</button>
+            <input class="border-2 py-2 rounded focus:ring-2 focus:ring-blue-600 outline-none" type="text" />
+            <button
+              class="
+                border
+                py-2
+                px-4
+                bg-pink-500
+                hover:bg-pink-700
+                rounded
+                font-bold
+                text-white
+                focus:ring-2 focus:ring-blue-600
+                ml-2
+              "
+            >
+              Apply
+            </button>
           </div>
         </div>
       </section>
       <hr class="mt-5" />
       <!-- final Total -->
-      <h2 class="text-4xl font-bold text-center">Total: $<span>1299</span></h2>
+      <h2 class="text-4xl font-bold text-center mt-2">Total: $<span id="final-price">1299</span></h2>
     </main>
     <!-- main js connect -->
     <script src="js/main.js"></script>
