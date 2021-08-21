@@ -1,4 +1,4 @@
-// get current price-->
+// get current value-->
 const currentMemoryPrice = document.getElementById('current-memory-cost');
 
 const currentStoragePrice = document.getElementById('current-storage-cost');
@@ -57,6 +57,21 @@ function upDateTotal() {
   finalTotalPrice.innerText = newTotalPrice;
 }
 
+// Bonus Part: apply promo code and getBonus-->
+function getBonus(promoCode) {
+  // get Input Value
+  const userInput = document.getElementById('user-input').value;
+  document.getElementById('user-input').value = '';
+  const finalTotalBeforeCodeApply = parseInt(finalTotalPrice.innerText);
+  const bonusAmount = finalTotalBeforeCodeApply * 0.2;
+
+  const finalTotalAfterCodeApply = finalTotalBeforeCodeApply - bonusAmount;
+  //   apply promo code-->
+  if (userInput == promoCode) {
+    finalTotalPrice.innerText = finalTotalAfterCodeApply;
+  }
+}
+
 //extra memory button event-->
 document.getElementById('8gb-memory-button').addEventListener('click', function () {
   setMemoryPrice(true);
@@ -96,4 +111,9 @@ document.getElementById('express-delivery-buttotn').addEventListener('click', fu
   setDeliveryCost(false);
   //updateTotal-->
   upDateTotal();
+});
+
+// Bonus Part:Promo code apply-->
+document.getElementById('apply-button').addEventListener('click', function () {
+  getBonus('stevekaku');
 });
